@@ -933,6 +933,7 @@ header #headerLeft img {
 }
 
 #Contact #ContactGrid form input {
+  padding-left: 10px;
   width: 90%;
   height: 35px;
   border-radius: 6px;
