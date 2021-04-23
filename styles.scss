@@ -136,6 +136,9 @@ header{
                 transform: translateY(0);
 
             }
+            @media screen and (max-width: 600px){
+                height: 20px;
+            }
         }
     }
 }
@@ -690,6 +693,9 @@ header{
         color: $secondary;
         text-decoration: underline;
         margin-left: 10px;
+        @media screen and (max-width: 600px){
+            margin-left: 0;
+        }
     }
     a{
         font-size: 22px;
@@ -703,7 +709,7 @@ header{
             font-size: 16px;
         }
         @media screen and (max-width: 600px){
-            font-size: 12px;
+            font-size: 13px;
         }
     }
 }
@@ -794,12 +800,14 @@ header{
                 @media screen and (max-width: 1000px){
                     width: 330px;
                 }
+                @media screen and (max-width: 600px){
+                    width: 300px;
+                }
             }
             display: grid;
             grid-template-areas: "fname lname"
                                     "phone email"
                                     " submit submit";
-            grid-gap: auto;
         }
     
     }
@@ -837,8 +845,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 600px){
-            padding-left: 10%;
+        @media screen and (max-width: 500px){
+            padding-left: 3%;
         }
     }
     .links2{
@@ -848,8 +856,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 600px){
-            padding-left: 10%;
+        @media screen and (max-width: 500px){
+            padding-left: 3%;
         }
     }
     .links3{
@@ -859,8 +867,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 600px){
-            padding-left: 10%;
+        @media screen and (max-width: 500px){
+            padding-left: 3%;
         }
     }
     .links4{
@@ -870,8 +878,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 600px){
-            padding-left: 10%;
+        @media screen and (max-width: 500px){
+            padding-left: 3%;
         }
     }
     .tribute{
@@ -907,8 +915,8 @@ footer{
                 margin-bottom: 15px;
             }
             @media screen and (max-width: 600px){
-                height: 20px;
-                margin-right: 5px;
+                height: 18px;
+                margin-right: 8px;
             }
         }
         #LogoAllmolBlanc{
@@ -916,7 +924,8 @@ footer{
             display: inline;
             margin-left: 5px;
             @media screen and (max-width: 600px){
-                height: 18px;
+                height: 16px;
+                margin-left: 8px;
             }
         }
     }
@@ -929,14 +938,14 @@ footer{
             float: left;
             margin-right: 10px;
             @media screen and (max-width: 800px){
-                margin-right: 40px;
                 margin-bottom: 80px;
+                margin-right: 40px;
             }
         }
         @media screen and (max-width: 800px){
                 display: flex;
                 border-top: none;
-                justify-content: center;
+                justify-self: center;
         }
     }
     .copyright{
@@ -946,7 +955,7 @@ footer{
         text-align: right;
         font-size: 12px;
         @media screen and (max-width: 450px){
-                font-style: 10px;
+                font-size: 10px;
         }
     }
     #footerGrid{
@@ -962,11 +971,13 @@ footer{
                             "bas1 bas1 bas1 bas1 bas2";
         }
         @media screen and (max-width: 800px){
+            grid-template-columns: 1fr 1fr;
             grid-template-areas: "col1 col2 "
                             "col3 col4 "
                             "bas1 bas1 "
                             "col5 col5 "
                             "bas2 bas2";
+            justify-content: center;
         }
     }
 

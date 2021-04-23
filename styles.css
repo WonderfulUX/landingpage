@@ -757,6 +757,12 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  header #headerLeft img {
+    height: 20px;
+  }
+}
+
 #MenuMobile {
   position: fixed;
   top: 50px;
@@ -1713,6 +1719,12 @@ header #headerLeft img {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  #Partenaires b {
+    margin-left: 0;
+  }
+}
+
 #Partenaires a {
   font-size: 22px;
 }
@@ -1737,7 +1749,7 @@ header #headerLeft img {
 
 @media screen and (max-width: 600px) {
   #Partenaires a {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -1816,7 +1828,6 @@ header #headerLeft img {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "fname lname" "phone email" " submit submit";
-  grid-gap: auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1902,6 +1913,12 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Contact #ContactGrid form .submit {
+    width: 300px;
+  }
+}
+
 footer {
   padding: 50px 0 0;
   background-color: #26205C;
@@ -1959,9 +1976,9 @@ footer .links1 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   footer .links1 {
-    padding-left: 10%;
+    padding-left: 3%;
   }
 }
 
@@ -1985,9 +2002,9 @@ footer .links2 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   footer .links2 {
-    padding-left: 10%;
+    padding-left: 3%;
   }
 }
 
@@ -2011,9 +2028,9 @@ footer .links3 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   footer .links3 {
-    padding-left: 10%;
+    padding-left: 3%;
   }
 }
 
@@ -2037,9 +2054,9 @@ footer .links4 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   footer .links4 {
-    padding-left: 10%;
+    padding-left: 3%;
   }
 }
 
@@ -2112,8 +2129,8 @@ footer .tribute #LogoKomesBlanc {
 
 @media screen and (max-width: 600px) {
   footer .tribute #LogoKomesBlanc {
-    height: 20px;
-    margin-right: 5px;
+    height: 18px;
+    margin-right: 8px;
   }
 }
 
@@ -2125,7 +2142,8 @@ footer .tribute #LogoAllmolBlanc {
 
 @media screen and (max-width: 600px) {
   footer .tribute #LogoAllmolBlanc {
-    height: 18px;
+    height: 16px;
+    margin-left: 8px;
   }
 }
 
@@ -2146,8 +2164,8 @@ footer .socialNetworkLinks img {
 
 @media screen and (max-width: 800px) {
   footer .socialNetworkLinks img {
-    margin-right: 40px;
     margin-bottom: 80px;
+    margin-right: 40px;
   }
 }
 
@@ -2157,9 +2175,7 @@ footer .socialNetworkLinks img {
     display: -ms-flexbox;
     display: flex;
     border-top: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-self: center;
   }
 }
 
@@ -2175,7 +2191,7 @@ footer .copyright {
 
 @media screen and (max-width: 450px) {
   footer .copyright {
-    font-style: 10px;
+    font-size: 10px;
   }
 }
 
@@ -2193,7 +2209,12 @@ footer #footerGrid {
 
 @media screen and (max-width: 800px) {
   footer #footerGrid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "col1 col2 " "col3 col4 " "bas1 bas1 " "col5 col5 " "bas2 bas2";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
