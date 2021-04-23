@@ -1823,6 +1823,12 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Contact #ContactGrid #ContactLeft p {
+    font-size: 14px;
+  }
+}
+
 #Contact #ContactGrid form {
   display: -ms-grid;
   display: grid;
@@ -1849,6 +1855,12 @@ header #headerLeft img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  #Contact #ContactGrid form label {
+    font-size: 14px;
+  }
 }
 
 #Contact #ContactGrid form input {

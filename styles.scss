@@ -751,6 +751,9 @@ header{
                 @media screen and (max-width: 1000px){
                     text-align: center;
                 }
+                @media screen and (max-width: 600px){
+                    font-size: 14px;
+                }
             }
         }
         form{
@@ -763,6 +766,11 @@ header{
             div{
                 display: flex;
                 flex-direction: column;         
+            }
+            label{
+                @media screen and (max-width: 800px){
+                    font-size: 14px;
+                }                
             }
             input{
                 padding-left: 10px;
