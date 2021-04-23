@@ -1179,13 +1179,6 @@ header #headerLeft img {
   #Solutions #solutionsGrid {
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #Solutions #solutionsGrid {
-    -ms-grid-columns: 90%;
-        grid-template-columns: 90%;
     margin-bottom: 70px;
   }
 }
@@ -1214,6 +1207,12 @@ header #headerLeft img {
 @media screen and (max-width: 1100px) {
   #Solutions .solutionsGridItem p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Solutions .solutionsGridItem p {
+    font-size: 13px;
   }
 }
 
