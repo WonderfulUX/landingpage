@@ -20,8 +20,20 @@
         <div id="headerRight">
             <a href="" class="primaryButton">Créer un compte</a>
             <a href="" class="tertiaryButton">Se connecter</a>
+            <button id="BoutonMenuMobile" onclick="displayMenu()">
+                <img src="./icons/menu.svg" alt="Menu Landing page Komès" >
+            </button>
         </div>
     </header><!--HEADER END-->
+    <nav id="MenuMobile"><!--MOBILE MENU-->
+        <ul>
+            <li><a href="#Solutions" onclick="hideMenu()">Comment ça marche</a></li>
+            <li><a href="#Partenaires" onclick="hideMenu()">Nos partenaires</a></li>
+            <li><a href="#Contact" onclick="hideMenu()">Contact</a></li>
+            <li><a href="" class="secondaryButton">Se connecter</a></li>
+            <li><a href="" class="primaryButton" >Créer un compte</a></li>
+        </ul>
+    </nav><!--MOBILE MENU END-->
     <section id="BannerSection"><!--BANNER SECTION-->
         <div class="container">
             <div id="BannerLeft">
@@ -33,11 +45,14 @@
                     <li>Trouvez un modèle de site adapté à votre type d’activité</li>
                     <li>Gérez votre boutique en toute simplicité</li>
                 </ul>
-                <div id="mainCTAS">
-                    <a href="" class="primaryButton">Essayer pendant 30 jours</a>
-                    <a href="" class="secondaryButton">En savoir plus</a>
+                <div id="CTAbox">
+                    <div id="mainCTAS">
+                        <a href="" class="primaryButton">Essayer pendant 30 jours</a>
+                        <a href="" class="secondaryButton">En savoir plus</a>
+                    </div>
+                    <p class="disclaimer">La version d’essai est entièrement gratuite et possède la totalité des fonctionnalités</p>
                 </div>
-                <p class="disclaimer">La version d’essai est entièrement gratuite et possède la totalité des fonctionnalités</p>
+                
             </div>
             <div id="BannerRight">
                 <img src="./Illutrations/BannerIllu.svg" alt="Création de site responsive">
@@ -53,15 +68,15 @@
                     <p>Vous n‘avez pas encore de visibilité sur internet et vous souhaitez créer une boutique en ligne</p>
                 </div>
                 <div class="solutionsGridItem">
-                    <img src="./icons/icon2.svg" alt="Une solution de boutique en ligne">
+                    <img src="./icons/icon2.svg" alt="Des difficultés avec le milieu digital">
                     <p>Vous n’êtes pas familier avec le milieu digital et vous ne savez pas par où commencer</p>
                 </div>
                 <div class="solutionsGridItem">
-                    <img src="./icons/icon3.svg" alt="Une solution de boutique en ligne">
+                    <img src="./icons/icon3.svg" alt="Un outil complet">
                     <p>Vous avez besoin d’un outil unique vous permettant de gérer votre marchandises, vos commandes et vos documents</p>
                 </div>
                 <div class="solutionsGridItem">
-                    <img src="./icons/icon4.svg" alt="Une solution de boutique en ligne">
+                    <img src="./icons/icon4.svg" alt="Déléguez les tâches à votre personnel">
                     <p>Vous souhaitez déléguer les tâches digitales aux membres de votre personnel</p>
                 </div>
             </div>
@@ -154,7 +169,7 @@
             </div>
         </div>
     </section><!--CONTACT END-->
-    <footer>
+    <footer><!--FOOTER-->
         <div class="container">
             <div id="footerGrid">
                 <div class="links1">
@@ -204,6 +219,21 @@
                 <p class="copyright">Copyright © 2021. All right reserved</p>
             </div>     
         </div>
-    </footer>
+    </footer><!--FOOTER END-->
+    <script>
+        function displayMenu(){
+            let menuPos = document.getElementById("MenuMobile");
+            if (menuPos.style.right=="0px")
+            {
+                document.getElementById("MenuMobile").style.right= "-240px";
+            }
+            else{
+                document.getElementById("MenuMobile").style.right="0px";
+            }
+        }
+        function hideMenu(){
+             document.getElementById("MenuMobile").style.right= "-240px";
+        }
+    </script>
 </body>
 </html>
