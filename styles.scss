@@ -9,6 +9,9 @@ body{
     *{
         color: $primary;
     }
+    section{
+        width: 100%;
+    }
     h2{
         font-size: 30px;
         @media screen and (max-width: 1300px){
@@ -22,6 +25,9 @@ body{
         }
         @media screen and (max-width: 800px){
             font-size: 24px;
+        }
+        @media screen and (max-width: 600px){
+            font-size: 20px;
         }
     }
     .primaryButton{
@@ -41,6 +47,9 @@ body{
     .sectionTitle{
         text-align: center;
         margin-bottom: $mb_sectionTitle;
+        @media screen and (max-width: 800px){
+            margin-bottom: 80px;
+        }
     }
 }
 
@@ -128,7 +137,6 @@ header{
     width: 200px;
     background-color: white;
     padding: 10px 25px;
-    z-index: 50;
     box-shadow: 0 2px 10px rgba($color: $grey, $alpha: 0.4);
     font-size: 14px;
     transition: all 0.3s;
@@ -144,6 +152,9 @@ header{
 }
 #BannerSection{
     padding: 100px 0 70px;
+    @media screen and (max-width: 800px){
+        padding: 70px 0 50px;
+    }
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -167,7 +178,10 @@ header{
                 margin-bottom: 60px;
             }
             @media screen and (max-width: 800px){
-                margin-bottom: 45px;
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: 600px){
+                margin-bottom: 40px;
             }
         }
         .h1Text{
@@ -189,6 +203,9 @@ header{
                 font-size: 36px;
                 margin-bottom: 20px;
             }
+            @media screen and (max-width: 600px){
+                font-size: 32px;
+            }
         }
         img{
             height: 44px;
@@ -204,6 +221,11 @@ header{
             }
             @media screen and (max-width: 800px){
                 height: 38px;
+                margin: 0 12px
+            }
+            @media screen and (max-width: 600px){
+                height: 32px;
+                
             }
 
         }
@@ -216,7 +238,10 @@ header{
                 margin-bottom: 80px;
             }
             @media screen and (max-width: 800px){
-                margin-bottom: 60px;
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: 600px){
+                margin-bottom: 40px;
             }
         }
         li{
@@ -233,6 +258,9 @@ header{
             }
             @media screen and (max-width: 800px){
                 font-size: 16px;
+            }
+            @media screen and (max-width: 600px){
+                font-size: 14px;
             }
         }
         li::before{
@@ -264,6 +292,11 @@ header{
                     }
                     @media screen and (max-width: 800px){
                         width: 200px;
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 800px){
+                        width: 160px;
+                        font-size: 12px;
                     }
                     &:first-child{
                         margin-right: 30px;
@@ -281,6 +314,9 @@ header{
             }
             .disclaimer{
                 font-size: 12px;
+                @media screen and (max-width: 800px){
+                    font-size: 10px;
+                }
             }
         }        
     }
@@ -296,6 +332,9 @@ header{
 }
 #Solutions{
     padding: 70px 0;
+    @media screen and (max-width: 800px){
+        padding: 70px 0;
+    }
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
     #solutionsGrid{
         display: grid;
@@ -311,6 +350,9 @@ header{
             grid-template-columns: 70%;
             grid-template-rows: repeat (4, auto);
             justify-content: space-around;
+        }
+        @media screen and (max-width: 600px){
+            grid-template-columns: 80%;
         } 
     }
     .solutionsGridItem{
@@ -327,7 +369,7 @@ header{
         p{
             @media screen and (max-width: 1100px){
                 font-size: 16px;
-            } 
+            }
         }
         @media screen and (max-width: 750px){
             grid-template-rows: 40px;
@@ -361,15 +403,20 @@ header{
             width: 30%;
             margin: 0 80px;
             @media screen and (max-width: 1200px){
-                font-size: 20px;
+                font-size: 22px;
                 margin: 0 50px;
             }
             @media screen and (max-width: 1000px){
+                font-size: 20px;
                 margin: 0 0 30px;
                 width: 60%;
             }
             @media screen and (max-width: 800px){
-                font-style: 18px;
+                font-size: 18px;
+                width: 70%;
+            }
+            @media screen and (max-width: 800px){
+                font-size: 16px;
                 width: 70%;
             }
         }
@@ -385,6 +432,9 @@ header{
 }
 #ThreeSteps{
     padding: 70px 0 100px;
+    @media screen and (max-width: 800px){
+        padding: 50px 0 70px;
+    }
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
     #ThreeStepsGrid{
         display: grid;
@@ -397,6 +447,9 @@ header{
             margin-bottom: 50px;
         }
         @media screen and (max-width: 800px){
+            grid-template-columns: 70%;
+        }
+        @media screen and (max-width: 600px){
             grid-template-columns: 70%;
         }
     }
@@ -416,6 +469,9 @@ header{
             @media screen and (max-width: 1100px){
                 font-size: 30px;
             }
+            @media screen and (max-width: 600px){
+                font-size: 24px;
+            }
         }
         .stepTitle{
             grid-area: title;
@@ -433,6 +489,9 @@ header{
                 font-size: 18px;
                 width: 100%;
             }
+            @media screen and (max-width: 600px){
+                font-size: 16px;
+            }
         }
         .stepText{
             grid-area: text;
@@ -442,6 +501,9 @@ header{
             @media screen and (max-width: 1100px){
                 padding: 12px 0 0;
                 width: 100%;
+            }
+            @media screen and (max-width: 1100px){
+                font-style: 14px;
             }
         }
 
@@ -460,9 +522,18 @@ header{
             margin-bottom: 30px;
             justify-content: flex-start;
         }
+        @media screen and (max-width: 600px){
+            grid-template-columns: 40px auto;
+            grid-template-rows: 30px auto;
+            grid-template-areas: "step title"
+                                "none text ";
+            margin-bottom: 30px;
+            justify-content: flex-start;
+        }
 
     }
     .pageLink{
+        position: relative;
         margin: auto;
         width: 330px;
         height: 50px;
@@ -478,15 +549,21 @@ header{
         }
     }
     .pageLink::after{
-        position: relative;
-        left: 170px;
+        position: absolute;
+        left: 330px;;
         content: url(./icons/pointer.svg);
         display: block;
+        @media screen and (max-width: 1100px){
+            left: 280px;
+        }
     }
 }
 
 #Partenaires{
     padding: 70px 0 100px;
+    @media screen and (max-width: 800px){
+        padding: 50px 0 70px;
+    }
     text-align: center;
     h2{
         margin-bottom: 30px;
@@ -567,10 +644,16 @@ header{
         @media screen and (max-width: 800px){
             font-size: 18px;
         }
+        @media screen and (max-width: 800px){
+            font-size: 16px;
+        }
     }
 }
 #Contact{
     padding: 70px 0;
+    @media screen and (max-width: 800px){
+        padding: 50px 0;
+    }
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
     #ContactGrid{
         display: grid;
@@ -694,7 +777,7 @@ footer{
         display: flex;
         flex-direction: column;
         @media screen and (max-width: 800px){
-            padding-left: 15%;
+            padding-left: 25%;
         }
     }
     .links2{
@@ -702,7 +785,7 @@ footer{
         display: flex;
         flex-direction: column;
         @media screen and (max-width: 800px){
-            padding-left: 15%;
+            padding-left: 25%;
         }
     }
     .links3{
@@ -710,7 +793,7 @@ footer{
         display: flex;
         flex-direction: column;
         @media screen and (max-width: 800px){
-            padding-left: 15%;
+            padding-left: 25%;
         }
     }
     .links4{
@@ -718,7 +801,7 @@ footer{
         display: flex;
         flex-direction: column;
         @media screen and (max-width: 800px){
-            padding-left: 15%;
+            padding-left: 25%;
         }
     }
     .tribute{
