@@ -1017,8 +1017,8 @@ header #headerLeft img {
 
 #Solutions {
   padding: 70px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(30%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
 }
 
 #Solutions #solutionsGrid {
@@ -1104,7 +1104,7 @@ header #headerLeft img {
   margin-bottom: 130px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #Solutions .screenDemo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1123,9 +1123,15 @@ header #headerLeft img {
           box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1000px) {
+  #Solutions .screenDemo img {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #Solutions .screenDemo img {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -1142,11 +1148,17 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #Solutions .screenDemo p {
+    margin: 0 0 30px;
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #Solutions .screenDemo p {
-    font-size: 18px;
-    margin: 0 0 30px;
-    width: 50%;
+    font-style: 18px;
+    width: 70%;
   }
 }
 
@@ -1157,7 +1169,7 @@ header #headerLeft img {
           flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #Solutions .right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1171,8 +1183,8 @@ header #headerLeft img {
 
 #ThreeSteps {
   padding: 70px 0 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(30%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
 }
 
 #ThreeSteps #ThreeStepsGrid {
@@ -1410,8 +1422,32 @@ header #headerLeft img {
 }
 
 @media screen and (max-width: 800px) {
-  #Partenaires #partenairesLogos img {
-    height: 90px;
+  #Partenaires #partenairesLogos #LogoLaboudiniere {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Partenaires #partenairesLogos #LogoLappart {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Partenaires #partenairesLogos #LogoLibrairieGenerale {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Partenaires #partenairesLogos #LogoCanalPlus {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Partenaires #partenairesLogos #LogoVinotheque {
+    height: 60px;
   }
 }
 
@@ -1431,10 +1467,16 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 800px) {
+  #Partenaires a {
+    font-size: 18px;
+  }
+}
+
 #Contact {
   padding: 70px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(30%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
 }
 
 #Contact #ContactGrid {
@@ -1460,8 +1502,29 @@ header #headerLeft img {
   text-align: left;
 }
 
+@media screen and (max-width: 1000px) {
+  #Contact #ContactGrid #ContactLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #Contact #ContactGrid #ContactLeft h2 {
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  #Contact #ContactGrid #ContactLeft h2 {
+    text-align: center;
+  }
 }
 
 #Contact #ContactGrid #ContactLeft p {
@@ -1469,11 +1532,29 @@ header #headerLeft img {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1000px) {
+  #Contact #ContactGrid #ContactLeft p {
+    text-align: center;
+  }
+}
+
 #Contact #ContactGrid form {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "fname lname" "phone email" " submit submit";
   grid-gap: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  #Contact #ContactGrid form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Contact #ContactGrid form {
+    width: 100%;
+  }
 }
 
 #Contact #ContactGrid form div {
@@ -1573,7 +1654,7 @@ footer ul {
 
 @media screen and (max-width: 1100px) {
   footer ul {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1598,6 +1679,12 @@ footer .links1 {
           flex-direction: column;
 }
 
+@media screen and (max-width: 800px) {
+  footer .links1 {
+    padding-left: 15%;
+  }
+}
+
 footer .links2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
@@ -1610,6 +1697,12 @@ footer .links2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  footer .links2 {
+    padding-left: 15%;
+  }
 }
 
 footer .links3 {
@@ -1626,6 +1719,12 @@ footer .links3 {
           flex-direction: column;
 }
 
+@media screen and (max-width: 800px) {
+  footer .links3 {
+    padding-left: 15%;
+  }
+}
+
 footer .links4 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
@@ -1638,6 +1737,12 @@ footer .links4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  footer .links4 {
+    padding-left: 15%;
+  }
 }
 
 footer .tribute {
@@ -1660,6 +1765,14 @@ footer .tribute {
           align-items: flex-end;
 }
 
+@media screen and (max-width: 800px) {
+  footer .tribute {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 footer .tribute #TributeContent {
   text-align: center;
 }
@@ -1668,10 +1781,29 @@ footer .tribute #TributeContent p {
   font-size: 12px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .tribute #TributeContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 footer .tribute #LogoKomesBlanc {
   height: 30px;
   display: inline-block;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  footer .tribute #LogoKomesBlanc {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    display: inline;
+    height: 22px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+  }
 }
 
 footer .tribute #LogoAllmolBlanc {
@@ -1695,6 +1827,25 @@ footer .socialNetworkLinks img {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .socialNetworkLinks img {
+    margin-right: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer .socialNetworkLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 footer .copyright {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
@@ -1714,6 +1865,12 @@ footer #footerGrid {
 @media screen and (max-width: 1100px) {
   footer #footerGrid {
         grid-template-areas: "col1 col1 col2 col2 col5" "col3 col3 col4 col4 col5 " "bas1 bas1 bas1 bas1 bas2";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer #footerGrid {
+        grid-template-areas: "col1 col2 " "col3 col4 " "bas1 bas1 " "col5 col5 " "bas2 bas2";
   }
 }
 /*# sourceMappingURL=styles.css.map */

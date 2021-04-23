@@ -296,7 +296,7 @@ header{
 }
 #Solutions{
     padding: 70px 0;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
     #solutionsGrid{
         display: grid;
         grid-template-columns: 20% 20% 20% 20%;
@@ -341,7 +341,7 @@ header{
         display: flex;
         align-items: center;
         margin-bottom: $mb;
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 1000px){
             flex-direction: column-reverse;
             align-items: flex-start;
         }  
@@ -349,8 +349,11 @@ header{
             width: 55%;
             border-radius: 13px;
             box-shadow: 0 2px 20px 10px rgba($color: #000000, $alpha: 0.1);
+            @media screen and (max-width: 1000px){
+                width: 70%;
+            }
             @media screen and (max-width: 800px){
-                width: 80%;
+                width: 100%;
             }  
         }
         p{
@@ -361,17 +364,20 @@ header{
                 font-size: 20px;
                 margin: 0 50px;
             }
-            @media screen and (max-width: 800px){
-                font-size: 18px;
+            @media screen and (max-width: 1000px){
                 margin: 0 0 30px;
-                width: 50%;
+                width: 60%;
+            }
+            @media screen and (max-width: 800px){
+                font-style: 18px;
+                width: 70%;
             }
         }
 
     }
     .right{
         flex-direction: row-reverse;
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 1000px){
             flex-direction: column-reverse;
             align-items: flex-end;
         }  
@@ -379,7 +385,7 @@ header{
 }
 #ThreeSteps{
     padding: 70px 0 100px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
     #ThreeStepsGrid{
         display: grid;
         grid-template-columns: repeat(3,32%);
@@ -521,8 +527,30 @@ header{
         img{
             justify-self: center;
             align-self: center;
+        }
+        #LogoLaboudiniere{
             @media screen and (max-width: 800px){
-                height: 90px;
+                height: 80px;
+            }
+        }
+        #LogoLappart{
+            @media screen and (max-width: 800px){
+                height: 150px;
+            }
+        }
+        #LogoLibrairieGenerale{
+            @media screen and (max-width: 800px){
+                height: 80px;
+            }
+        }
+        #LogoCanalPlus{
+            @media screen and (max-width: 800px){
+                height: 80px;
+            }
+        }
+        #LogoVinotheque{
+            @media screen and (max-width: 800px){
+                height: 60px;
             }
         }
     }
@@ -536,11 +564,14 @@ header{
         @media screen and (max-width: 1200px){
             font-size: 20px;
         }
+        @media screen and (max-width: 800px){
+            font-size: 18px;
+        }
     }
 }
 #Contact{
     padding: 70px 0;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 30%);
     #ContactGrid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -555,15 +586,32 @@ header{
         }
         #ContactLeft{
             text-align: left;
+            @media screen and (max-width: 1000px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             h2{
                 margin-bottom: 12px;
+                @media screen and (max-width: 1000px){
+                    text-align: center;
+                }
             }
             p{
                 color: $bluegrey;
                 margin-bottom: 50px;
+                @media screen and (max-width: 1000px){
+                    text-align: center;
+                }
             }
         }
         form{
+            @media screen and (max-width: 1000px){
+                width: 80%;
+            }
+            @media screen and (max-width: 800px){
+                width: 100%;
+            }
             div{
                 display: flex;
                 flex-direction: column;         
@@ -632,7 +680,7 @@ footer{
     ul{
         margin-bottom: 50px;
         @media screen and (max-width: 1100px){
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
     }
     li{
@@ -640,29 +688,38 @@ footer{
         font-size: 13px;
         letter-spacing: 0.2px;
         color: rgba($color: white, $alpha: 0.7);
-        @media screen and (max-width: 1100px){
-            
-        }
     }
     .links1{
         grid-area: col1;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 800px){
+            padding-left: 15%;
+        }
     }
     .links2{
         grid-area: col2;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 800px){
+            padding-left: 15%;
+        }
     }
     .links3{
         grid-area: col3;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 800px){
+            padding-left: 15%;
+        }
     }
     .links4{
         grid-area: col4;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 800px){
+            padding-left: 15%;
+        }
     }
     .tribute{
         grid-area: col5;
@@ -670,19 +727,30 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        // @media screen and (max-width: 1100px){
-        //     align-items: center;
-        // }
+        @media screen and (max-width: 800px){
+            align-items: center;
+        }
         #TributeContent{
             text-align: center;
             p{
                 font-size: 12px;
+            }
+            @media screen and (max-width: 800px){
+                display: flex;
             }
         }
         #LogoKomesBlanc{
             height: 30px;
             display: inline-block;
             margin-bottom: 30px;
+            @media screen and (max-width: 800px){
+                transform: translateY(-2px);
+                display: inline;
+                height: 22px;
+                margin-right: 5px;
+                margin-bottom: 15px;
+
+            }
         }
         #LogoAllmolBlanc{
             height: 18px;
@@ -698,6 +766,15 @@ footer{
         img{
             float: left;
             margin-right: 10px;
+            @media screen and (max-width: 800px){
+                margin-right: 40px;
+                margin-bottom: 80px;
+            }
+        }
+        @media screen and (max-width: 800px){
+                display: flex;
+                border-top: none;
+                justify-content: center;
         }
     }
     .copyright{
@@ -718,6 +795,13 @@ footer{
             grid-template-areas: "col1 col1 col2 col2 col5"
                             "col3 col3 col4 col4 col5 "
                             "bas1 bas1 bas1 bas1 bas2";
+        }
+        @media screen and (max-width: 800px){
+            grid-template-areas: "col1 col2 "
+                            "col3 col4 "
+                            "bas1 bas1 "
+                            "col5 col5 "
+                            "bas2 bas2";
         }
     }
 
