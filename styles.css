@@ -591,6 +591,12 @@ body h2 {
   }
 }
 
+@media screen and (max-width: 450px) {
+  body h2 {
+    font-size: 16px;
+  }
+}
+
 body .container {
   max-width: 1300px;
   width: 90%;
@@ -605,6 +611,12 @@ body .sectionTitle {
 @media screen and (max-width: 800px) {
   body .sectionTitle {
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body .sectionTitle {
+    margin-bottom: 50px;
   }
 }
 
@@ -631,6 +643,12 @@ header {
 @media screen and (max-width: 1000px) {
   header {
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    padding: 0 20px;
   }
 }
 
@@ -873,6 +891,12 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 450px) {
+  #BannerSection #BannerLeft .h1Text {
+    font-size: 28px;
+  }
+}
+
 #BannerSection #BannerLeft img {
   height: 44px;
   margin: 0 16px;
@@ -906,6 +930,13 @@ header #headerLeft img {
 @media screen and (max-width: 600px) {
   #BannerSection #BannerLeft img {
     height: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #BannerSection #BannerLeft img {
+    height: 28px;
+    margin: 0 8px;
   }
 }
 
@@ -969,6 +1000,12 @@ header #headerLeft img {
 @media screen and (max-width: 600px) {
   #BannerSection #BannerLeft li {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #BannerSection #BannerLeft li {
+    font-size: 11px;
   }
 }
 
@@ -1071,6 +1108,12 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 450px) {
+  #BannerSection #BannerLeft #CTAbox .disclaimer {
+    font-size: 9px;
+  }
+}
+
 #BannerSection #BannerRight img {
   width: 100%;
 }
@@ -1130,6 +1173,14 @@ header #headerLeft img {
   #Solutions #solutionsGrid {
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Solutions #solutionsGrid {
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+    margin-bottom: 70px;
   }
 }
 
@@ -1317,6 +1368,13 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 450px) {
+  #ThreeSteps #ThreeStepsGrid {
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+  }
+}
+
 #ThreeSteps .threeStepsGridItem {
   display: -ms-grid;
   display: grid;
@@ -1473,6 +1531,14 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #ThreeSteps .pageLink {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
 #ThreeSteps .pageLink::after {
   position: absolute;
   left: 330px;
@@ -1483,6 +1549,12 @@ header #headerLeft img {
 @media screen and (max-width: 1100px) {
   #ThreeSteps .pageLink::after {
     left: 280px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #ThreeSteps .pageLink::after {
+    left: 230px;
   }
 }
 
@@ -1558,6 +1630,15 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Partenaires #partenairesLogos {
+    -ms-grid-columns: (150px)[2];
+        grid-template-columns: repeat(2, 150px);
+    -ms-grid-rows: (120px)[3];
+        grid-template-rows: repeat(3, 120px);
+  }
+}
+
 #Partenaires #partenairesLogos img {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1572,9 +1653,21 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Partenaires #partenairesLogos #LogoLaboudiniere {
+    height: 60px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #Partenaires #partenairesLogos #LogoLappart {
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Partenaires #partenairesLogos #LogoLappart {
+    height: 120px;
   }
 }
 
@@ -1584,15 +1677,33 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Partenaires #partenairesLogos #LogoLibrairieGenerale {
+    height: 60px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #Partenaires #partenairesLogos #LogoCanalPlus {
     height: 80px;
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Partenaires #partenairesLogos #LogoCanalPlus {
+    height: 60px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #Partenaires #partenairesLogos #LogoVinotheque {
     height: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Partenaires #partenairesLogos #LogoVinotheque {
+    height: 45px;
   }
 }
 
@@ -1621,6 +1732,12 @@ header #headerLeft img {
 @media screen and (max-width: 800px) {
   #Partenaires a {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Partenaires a {
+    font-size: 12px;
   }
 }
 
@@ -1842,6 +1959,12 @@ footer .links1 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  footer .links1 {
+    padding-left: 10%;
+  }
+}
+
 footer .links2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
@@ -1859,6 +1982,12 @@ footer .links2 {
 @media screen and (max-width: 800px) {
   footer .links2 {
     padding-left: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .links2 {
+    padding-left: 10%;
   }
 }
 
@@ -1882,6 +2011,12 @@ footer .links3 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  footer .links3 {
+    padding-left: 10%;
+  }
+}
+
 footer .links4 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
@@ -1899,6 +2034,12 @@ footer .links4 {
 @media screen and (max-width: 800px) {
   footer .links4 {
     padding-left: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .links4 {
+    padding-left: 10%;
   }
 }
 
@@ -1938,6 +2079,12 @@ footer .tribute #TributeContent p {
   font-size: 12px;
 }
 
+@media screen and (max-width: 600px) {
+  footer .tribute #TributeContent p {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   footer .tribute #TributeContent {
     display: -webkit-box;
@@ -1958,8 +2105,15 @@ footer .tribute #LogoKomesBlanc {
             transform: translateY(-2px);
     display: inline;
     height: 22px;
-    margin-right: 5px;
+    margin-right: 8px;
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .tribute #LogoKomesBlanc {
+    height: 20px;
+    margin-right: 5px;
   }
 }
 
@@ -1967,6 +2121,12 @@ footer .tribute #LogoAllmolBlanc {
   height: 18px;
   display: inline;
   margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  footer .tribute #LogoAllmolBlanc {
+    height: 18px;
+  }
 }
 
 footer .socialNetworkLinks {
@@ -2011,6 +2171,12 @@ footer .copyright {
   padding: 10px 0;
   text-align: right;
   font-size: 12px;
+}
+
+@media screen and (max-width: 450px) {
+  footer .copyright {
+    font-style: 10px;
+  }
 }
 
 footer #footerGrid {

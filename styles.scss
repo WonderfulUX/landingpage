@@ -29,6 +29,9 @@ body{
         @media screen and (max-width: 600px){
             font-size: 20px;
         }
+        @media screen and (max-width: 450px){
+            font-size: 16px;
+        }
     }
     .primaryButton{
         @extend %primaryButton;
@@ -50,6 +53,9 @@ body{
         @media screen and (max-width: 800px){
             margin-bottom: 80px;
         }
+        @media screen and (max-width: 600px){
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -66,6 +72,9 @@ header{
     z-index: 50;
     @media screen and (max-width: 1000px){
         height: 50px;
+    }
+    @media screen and (max-width: 450px){
+        padding: 0 20px;
     }
 
     #headerRight{
@@ -206,6 +215,9 @@ header{
             @media screen and (max-width: 600px){
                 font-size: 32px;
             }
+            @media screen and (max-width: 450px){
+                font-size: 28px;
+            }
         }
         img{
             height: 44px;
@@ -224,8 +236,11 @@ header{
                 margin: 0 12px
             }
             @media screen and (max-width: 600px){
-                height: 32px;
-                
+                height: 32px;  
+            }
+            @media screen and (max-width: 450px){
+                height: 28px;
+                margin: 0 8px
             }
 
         }
@@ -261,6 +276,9 @@ header{
             }
             @media screen and (max-width: 600px){
                 font-size: 14px;
+            }
+            @media screen and (max-width: 450px){
+                font-size: 11px;
             }
         }
         li::before{
@@ -317,6 +335,9 @@ header{
                 @media screen and (max-width: 800px){
                     font-size: 10px;
                 }
+                @media screen and (max-width: 450px){
+                    font-size: 9px;
+                }
             }
         }        
     }
@@ -353,6 +374,10 @@ header{
         }
         @media screen and (max-width: 600px){
             grid-template-columns: 80%;
+        }
+        @media screen and (max-width: 600px){
+            grid-template-columns: 90%;
+            margin-bottom: 70px;
         } 
     }
     .solutionsGridItem{
@@ -452,6 +477,9 @@ header{
         @media screen and (max-width: 600px){
             grid-template-columns: 70%;
         }
+        @media screen and (max-width: 450px){
+            grid-template-columns: 90%;
+        }
     }
     .threeStepsGridItem{
         .stepNumber{
@@ -547,6 +575,11 @@ header{
             height: 45px;
             line-height: 45px;
         }
+        @media screen and (max-width: 600px){
+            width: 250px;
+            height: 40px;
+            line-height: 40px;
+        }
     }
     .pageLink::after{
         position: absolute;
@@ -555,6 +588,9 @@ header{
         display: block;
         @media screen and (max-width: 1100px){
             left: 280px;
+        }
+        @media screen and (max-width: 600px){
+            left: 230px;
         }
     }
 }
@@ -601,6 +637,10 @@ header{
             grid-template-columns: repeat(2,200px);
             grid-template-rows: repeat(3,150px);
         }
+        @media screen and (max-width: 600px){
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(3,120px);
+        }
         img{
             justify-self: center;
             align-self: center;
@@ -609,25 +649,40 @@ header{
             @media screen and (max-width: 800px){
                 height: 80px;
             }
+            @media screen and (max-width: 600px){
+                height: 60px;
+            }
         }
         #LogoLappart{
             @media screen and (max-width: 800px){
                 height: 150px;
+            }
+            @media screen and (max-width: 600px){
+                height: 120px;
             }
         }
         #LogoLibrairieGenerale{
             @media screen and (max-width: 800px){
                 height: 80px;
             }
+            @media screen and (max-width: 600px){
+                height: 60px;
+            }
         }
         #LogoCanalPlus{
             @media screen and (max-width: 800px){
                 height: 80px;
             }
+            @media screen and (max-width: 600px){
+                height: 60px;
+            }
         }
         #LogoVinotheque{
             @media screen and (max-width: 800px){
                 height: 60px;
+            }
+            @media screen and (max-width: 600px){
+                height: 45px;
             }
         }
     }
@@ -646,6 +701,9 @@ header{
         }
         @media screen and (max-width: 800px){
             font-size: 16px;
+        }
+        @media screen and (max-width: 600px){
+            font-size: 12px;
         }
     }
 }
@@ -779,6 +837,9 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
+        @media screen and (max-width: 600px){
+            padding-left: 10%;
+        }
     }
     .links2{
         grid-area: col2;
@@ -786,6 +847,9 @@ footer{
         flex-direction: column;
         @media screen and (max-width: 800px){
             padding-left: 25%;
+        }
+        @media screen and (max-width: 600px){
+            padding-left: 10%;
         }
     }
     .links3{
@@ -795,6 +859,9 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
+        @media screen and (max-width: 600px){
+            padding-left: 10%;
+        }
     }
     .links4{
         grid-area: col4;
@@ -802,6 +869,9 @@ footer{
         flex-direction: column;
         @media screen and (max-width: 800px){
             padding-left: 25%;
+        }
+        @media screen and (max-width: 600px){
+            padding-left: 10%;
         }
     }
     .tribute{
@@ -817,6 +887,9 @@ footer{
             text-align: center;
             p{
                 font-size: 12px;
+                @media screen and (max-width: 600px){
+                    font-size: 10px;
+                }
             }
             @media screen and (max-width: 800px){
                 display: flex;
@@ -830,15 +903,21 @@ footer{
                 transform: translateY(-2px);
                 display: inline;
                 height: 22px;
-                margin-right: 5px;
+                margin-right: 8px;
                 margin-bottom: 15px;
-
+            }
+            @media screen and (max-width: 600px){
+                height: 20px;
+                margin-right: 5px;
             }
         }
         #LogoAllmolBlanc{
             height: 18px;
             display: inline;
             margin-left: 5px;
+            @media screen and (max-width: 600px){
+                height: 18px;
+            }
         }
     }
     .socialNetworkLinks{
@@ -866,6 +945,9 @@ footer{
         padding: 10px 0;
         text-align: right;
         font-size: 12px;
+        @media screen and (max-width: 450px){
+                font-style: 10px;
+        }
     }
     #footerGrid{
         display: grid;
