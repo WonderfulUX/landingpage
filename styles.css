@@ -577,7 +577,7 @@ body h2 {
 
 @media screen and (max-width: 800px) {
   body h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -973,6 +973,12 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 800px) {
+  #BannerSection #BannerLeft #CTAbox #mainCTAS a {
+    width: 200px;
+  }
+}
+
 #BannerSection #BannerLeft #CTAbox #mainCTAS a:first-child {
   margin-right: 30px;
 }
@@ -986,6 +992,12 @@ header #headerLeft img {
 @media screen and (max-width: 1000px) {
   #BannerSection #BannerLeft #CTAbox #mainCTAS a:first-child {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #BannerSection #BannerLeft #CTAbox #mainCTAS a:first-child {
+    margin-right: 20px;
   }
 }
 
@@ -1078,6 +1090,7 @@ header #headerLeft img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 80px;
   }
 }
 
@@ -1091,11 +1104,29 @@ header #headerLeft img {
   margin-bottom: 130px;
 }
 
+@media screen and (max-width: 800px) {
+  #Solutions .screenDemo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 #Solutions .screenDemo img {
   width: 55%;
   border-radius: 13px;
   -webkit-box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+  #Solutions .screenDemo img {
+    width: 80%;
+  }
 }
 
 #Solutions .screenDemo p {
@@ -1114,6 +1145,8 @@ header #headerLeft img {
 @media screen and (max-width: 800px) {
   #Solutions .screenDemo p {
     font-size: 18px;
+    margin: 0 0 30px;
+    width: 50%;
   }
 }
 
@@ -1122,6 +1155,18 @@ header #headerLeft img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 800px) {
+  #Solutions .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 #ThreeSteps {
