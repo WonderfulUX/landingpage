@@ -689,18 +689,15 @@ header{
         }
     }
     a{
-        font-size: 22px;
+        font-size: 20px;
         @media screen and (max-width: 1200px){
-            font-size: 20px;
-        }
-        @media screen and (max-width: 800px){
             font-size: 18px;
         }
         @media screen and (max-width: 800px){
             font-size: 16px;
         }
         @media screen and (max-width: 600px){
-            font-size: 13px;
+            font-size: 14px;
         }
     }
 }
@@ -798,9 +795,11 @@ header{
                 }
                 @media screen and (max-width: 1000px){
                     width: 330px;
+                    height: 45px;
                 }
                 @media screen and (max-width: 600px){
                     width: 300px;
+                    font-size: 12px;
                 }
             }
             display: grid;
@@ -833,9 +832,12 @@ footer{
     }
     li{
         height: 30px;
-        font-size: 13px;
+        font-size: 14px;
         letter-spacing: 0.2px;
         color: rgba($color: white, $alpha: 0.7);
+        @media screen and (max-width: 600px){
+            font-size: 12px;
+        }
     }
     .links1{
         grid-area: col1;
@@ -844,8 +846,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 500px){
-            padding-left: 3%;
+        @media screen and (max-width: 600px){
+            padding-left: 15%;
         }
     }
     .links2{
@@ -855,9 +857,6 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 500px){
-            padding-left: 3%;
-        }
     }
     .links3{
         grid-area: col3;
@@ -866,8 +865,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 500px){
-            padding-left: 3%;
+        @media screen and (max-width: 600px){
+            padding-left: 15%;
         }
     }
     .links4{
@@ -876,9 +875,6 @@ footer{
         flex-direction: column;
         @media screen and (max-width: 800px){
             padding-left: 25%;
-        }
-        @media screen and (max-width: 500px){
-            padding-left: 3%;
         }
     }
     .tribute{
@@ -893,9 +889,9 @@ footer{
         #TributeContent{
             text-align: center;
             p{
-                font-size: 12px;
+                font-size: 13px;
                 @media screen and (max-width: 600px){
-                    font-size: 10px;
+                    font-size: 11px;
                 }
             }
             @media screen and (max-width: 800px){
@@ -921,7 +917,7 @@ footer{
         #LogoAllmolBlanc{
             height: 18px;
             display: inline;
-            margin-left: 5px;
+            margin-left: 4px;
             @media screen and (max-width: 600px){
                 height: 16px;
                 margin-left: 8px;
@@ -937,8 +933,7 @@ footer{
             float: left;
             margin-right: 10px;
             @media screen and (max-width: 800px){
-                margin-bottom: 80px;
-                margin-right: 40px;
+                margin: 0 20px 80px;
             }
         }
         @media screen and (max-width: 800px){
@@ -953,7 +948,11 @@ footer{
         padding: 10px 0;
         text-align: right;
         font-size: 12px;
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 800px){
+            text-align: center;
+            font-size: 11px;
+        }
+        @media screen and (max-width: 600px){
                 font-size: 10px;
         }
     }
@@ -965,10 +964,15 @@ footer{
                             "col1 col2 col3 col4 col5"
                             "bas1 bas1 bas1 bas1 bas2";
         @media screen and (max-width: 1100px){
-            grid-template-areas: "col1 col1 col2 col2 col5"
-                            "col3 col3 col4 col4 col5 "
-                            "bas1 bas1 bas1 bas1 bas2";
+            grid-template-columns: 35% 25% 40%;
+            grid-template-areas: "col1 col2 col5"
+                            "col3 col4 col5 "
+                            "bas1 bas1 bas2";
         }
+        //     grid-template-areas: "col1 col1 col1 col2 col2 col2 col5"
+        //                     "col3 col3 col3 col4 col4 col4 col5 "
+        //                     "bas1 bas1 bas1 bas1 bas1 bas2 bas2";
+        // }
         @media screen and (max-width: 800px){
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "col1 col2 "

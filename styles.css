@@ -1706,16 +1706,10 @@ header #headerLeft img {
 }
 
 #Partenaires a {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  #Partenaires a {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 800px) {
   #Partenaires a {
     font-size: 18px;
   }
@@ -1729,7 +1723,7 @@ header #headerLeft img {
 
 @media screen and (max-width: 600px) {
   #Partenaires a {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -1902,12 +1896,14 @@ header #headerLeft img {
 @media screen and (max-width: 1000px) {
   #Contact #ContactGrid form .submit {
     width: 330px;
+    height: 45px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #Contact #ContactGrid form .submit {
     width: 300px;
+    font-size: 12px;
   }
 }
 
@@ -1943,9 +1939,15 @@ footer ul {
 
 footer li {
   height: 30px;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.2px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 600px) {
+  footer li {
+    font-size: 12px;
+  }
 }
 
 footer .links1 {
@@ -1968,9 +1970,9 @@ footer .links1 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   footer .links1 {
-    padding-left: 3%;
+    padding-left: 15%;
   }
 }
 
@@ -1994,12 +1996,6 @@ footer .links2 {
   }
 }
 
-@media screen and (max-width: 500px) {
-  footer .links2 {
-    padding-left: 3%;
-  }
-}
-
 footer .links3 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
@@ -2020,9 +2016,9 @@ footer .links3 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   footer .links3 {
-    padding-left: 3%;
+    padding-left: 15%;
   }
 }
 
@@ -2043,12 +2039,6 @@ footer .links4 {
 @media screen and (max-width: 800px) {
   footer .links4 {
     padding-left: 25%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  footer .links4 {
-    padding-left: 3%;
   }
 }
 
@@ -2085,12 +2075,12 @@ footer .tribute #TributeContent {
 }
 
 footer .tribute #TributeContent p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 600px) {
   footer .tribute #TributeContent p {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -2129,7 +2119,7 @@ footer .tribute #LogoKomesBlanc {
 footer .tribute #LogoAllmolBlanc {
   height: 18px;
   display: inline;
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 @media screen and (max-width: 600px) {
@@ -2156,8 +2146,7 @@ footer .socialNetworkLinks img {
 
 @media screen and (max-width: 800px) {
   footer .socialNetworkLinks img {
-    margin-bottom: 80px;
-    margin-right: 40px;
+    margin: 0 20px 80px;
   }
 }
 
@@ -2181,7 +2170,14 @@ footer .copyright {
   font-size: 12px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
+  footer .copyright {
+    text-align: center;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   footer .copyright {
     font-size: 10px;
   }
@@ -2195,7 +2191,9 @@ footer #footerGrid {
 
 @media screen and (max-width: 1100px) {
   footer #footerGrid {
-        grid-template-areas: "col1 col1 col2 col2 col5" "col3 col3 col4 col4 col5 " "bas1 bas1 bas1 bas1 bas2";
+    -ms-grid-columns: 35% 25% 40%;
+        grid-template-columns: 35% 25% 40%;
+        grid-template-areas: "col1 col2 col5" "col3 col4 col5 " "bas1 bas1 bas2";
   }
 }
 
