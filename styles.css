@@ -903,6 +903,21 @@ header #headerLeft img {
   }
 }
 
+#BannerSection #BannerLeft .textList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#BannerSection #BannerLeft .textList img {
+  height: 30px;
+  margin-right: 8px;
+  margin-left: 0;
+}
+
 #BannerSection #BannerLeft img {
   height: 44px;
   margin: 0 16px;
@@ -923,8 +938,28 @@ header #headerLeft img {
 
 @media screen and (max-width: 1000px) {
   #BannerSection #BannerLeft img {
-    height: 44px;
+    height: 40px;
     margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #BannerSection #BannerLeft img {
+    height: 32px;
+    margin: 0 9px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #BannerSection #BannerLeft img {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #BannerSection #BannerLeft img {
+    height: 28px;
+    margin: 0 9px;
   }
 }
 
@@ -959,6 +994,7 @@ header #headerLeft img {
 #BannerSection #BannerLeft li {
   font-size: 20px;
   margin-bottom: 5px;
+  display: block;
 }
 
 @media screen and (max-width: 1300px) {
@@ -995,12 +1031,6 @@ header #headerLeft img {
   #BannerSection #BannerLeft li {
     font-size: 12px;
   }
-}
-
-#BannerSection #BannerLeft li::before {
-  content: url(./icons/stylishCheckbox.svg);
-  margin-right: 8px;
-  vertical-align: middle;
 }
 
 #BannerSection #BannerLeft #CTAbox {

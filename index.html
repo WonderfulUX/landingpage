@@ -41,9 +41,16 @@
                 <h2 class="h1Text">Bienvenue sur<img src="./images/LogoKomes.svg" alt="Logo de Komès" id="LogoKomèsBanner">!</h2>
                 <h2>La plateforme e-commerce locale <br>la moins chère du marché</h2>
                 <ul>
-                    <li>Passez à la digitalisation des ventes de vos produits</li>
-                    <li>Trouvez un modèle de site adapté à votre type d’activité</li>
-                    <li>Gérez votre boutique en toute simplicité</li>
+                    <div class="textList">
+                        <img src="./icons/stylishCheckbox.svg" alt="">
+                        <li>Passez à la digitalisation des ventes de vos produits</li>
+                    </div>
+                    <div class="textList">
+                        <li>Trouvez un modèle de site adapté à votre type d’activité</li>
+                    </div>
+                    <div class="textList">
+                        <li>Gérez votre boutique en toute simplicité</li>
+                    </div>                   
                 </ul>
                 <div id="CTAbox">
                     <div id="mainCTAS">
@@ -234,14 +241,16 @@
         function hideMenu(){
              document.getElementById("MenuMobile").style.right= "-240px";
         }
-        // function changeIcons(){
-        //     if(window.innerWidth<600)
-        //     {
-        //         console.log('sous les 600)')
-        //     }
-        //     // let banner=document.getElementById('BannerLeft');
-        //     // let lis=banner.querySelector('li');
-        // }
+        function changeIcons(){
+            let vw=window.innerWidth;
+            if(vw<600)
+            {
+                alert('sous les 600')
+            }
+            else{
+                alert('Plus de  600')
+            }
+        }
     </script>
 </body>
 </html>

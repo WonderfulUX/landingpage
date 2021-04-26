@@ -222,6 +222,16 @@ header{
                 font-size: 28px;
             }
         }
+        .textList{
+            display: flex;
+            align-items: center;
+            img{
+                height: 30px;
+                margin-right: 8px;
+                margin-left: 0;
+            }
+        }
+
         img{
             height: 44px;
             margin: 0 16px;
@@ -233,8 +243,19 @@ header{
                 margin: 0 12px
             }
             @media screen and (max-width: 1000px){
-                height: 44px;
+                height: 40px;
                 margin: 0 16px
+            }
+            @media screen and (max-width: 800px){
+                height: 32px;
+                margin: 0 9px;
+            }
+            @media screen and (max-width: 600px){
+                height: 30px;
+            }
+            @media screen and (max-width: 450px){
+                height: 28px;
+                margin: 0 9px;
             }
         }
         ul{
@@ -255,6 +276,7 @@ header{
         li{
             font-size: 20px;
             margin-bottom: 5px;
+            display: block;
             @media screen and (max-width: 1300px){
                 font-size: 18px;
             }
@@ -274,11 +296,11 @@ header{
                 font-size: 12px;
             }
         }
-        li::before{
-            content: url(./icons/stylishCheckbox.svg);
-            margin-right: 8px;
-            vertical-align: middle;
-        }
+        // li::before{
+        //     content: url(./icons/stylishCheckbox.svg);
+        //     margin-right: 8px;
+        //     vertical-align: middle;
+        // }
         #CTAbox{
             display: flex;
             flex-direction: column;
