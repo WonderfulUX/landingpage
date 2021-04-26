@@ -221,43 +221,49 @@ header{
             @media screen and (max-width: 450px){
                 font-size: 28px;
             }
+            #LogoKomesBanner{
+                height: 70px;
+                margin: 0 16px;
+                @media screen and (max-width: 1300px){
+                    height: 40px;
+                }
+                @media screen and (max-width: 1100px){
+                    height: 36px;
+                    margin: 0 12px
+                }
+                @media screen and (max-width: 1000px){
+                    height: 40px;
+                    margin: 0 16px
+                }
+                @media screen and (max-width: 800px){
+                    height: 32px;
+                    margin: 0 9px;
+                }
+                @media screen and (max-width: 600px){
+                    height: 30px;
+                }
+                @media screen and (max-width: 450px){
+                    height: 28px;
+                    margin: 0 9px;
+                }
+            }
         }
         .textList{
             display: flex;
             align-items: center;
+            margin-bottom: 5px;
             img{
                 height: 30px;
                 margin-right: 8px;
                 margin-left: 0;
+                @media screen and (max-width: 600px){
+                    height: 20px;
+                    margin-right: 4px;
+                }
+
             }
         }
 
-        img{
-            height: 44px;
-            margin: 0 16px;
-            @media screen and (max-width: 1300px){
-                height: 40px;
-            }
-            @media screen and (max-width: 1100px){
-                height: 36px;
-                margin: 0 12px
-            }
-            @media screen and (max-width: 1000px){
-                height: 40px;
-                margin: 0 16px
-            }
-            @media screen and (max-width: 800px){
-                height: 32px;
-                margin: 0 9px;
-            }
-            @media screen and (max-width: 600px){
-                height: 30px;
-            }
-            @media screen and (max-width: 450px){
-                height: 28px;
-                margin: 0 9px;
-            }
-        }
         ul{
             margin-bottom: 80px;
             @media screen and (max-width: 1300px){
@@ -275,7 +281,6 @@ header{
         }
         li{
             font-size: 20px;
-            margin-bottom: 5px;
             display: block;
             @media screen and (max-width: 1300px){
                 font-size: 18px;

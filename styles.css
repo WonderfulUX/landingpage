@@ -903,6 +903,51 @@ header #headerLeft img {
   }
 }
 
+#BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+  height: 70px;
+  margin: 0 16px;
+}
+
+@media screen and (max-width: 1300px) {
+  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+    height: 36px;
+    margin: 0 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+    height: 40px;
+    margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+    height: 32px;
+    margin: 0 9px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+    height: 28px;
+    margin: 0 9px;
+  }
+}
+
 #BannerSection #BannerLeft .textList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -910,6 +955,7 @@ header #headerLeft img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 5px;
 }
 
 #BannerSection #BannerLeft .textList img {
@@ -918,48 +964,10 @@ header #headerLeft img {
   margin-left: 0;
 }
 
-#BannerSection #BannerLeft img {
-  height: 44px;
-  margin: 0 16px;
-}
-
-@media screen and (max-width: 1300px) {
-  #BannerSection #BannerLeft img {
-    height: 40px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  #BannerSection #BannerLeft img {
-    height: 36px;
-    margin: 0 12px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #BannerSection #BannerLeft img {
-    height: 40px;
-    margin: 0 16px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #BannerSection #BannerLeft img {
-    height: 32px;
-    margin: 0 9px;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  #BannerSection #BannerLeft img {
-    height: 30px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #BannerSection #BannerLeft img {
-    height: 28px;
-    margin: 0 9px;
+  #BannerSection #BannerLeft .textList img {
+    height: 20px;
+    margin-right: 4px;
   }
 }
 
@@ -993,7 +1001,6 @@ header #headerLeft img {
 
 #BannerSection #BannerLeft li {
   font-size: 20px;
-  margin-bottom: 5px;
   display: block;
 }
 
