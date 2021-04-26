@@ -563,13 +563,13 @@ body h2 {
 
 @media screen and (max-width: 1300px) {
   body h2 {
-    font-size: 26px;
+    font-size: 27px;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
   body h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
@@ -872,7 +872,7 @@ header #headerLeft img {
 
 @media screen and (max-width: 1100px) {
   #BannerSection #BannerLeft .h1Text {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
 }
@@ -916,33 +916,15 @@ header #headerLeft img {
 
 @media screen and (max-width: 1100px) {
   #BannerSection #BannerLeft img {
-    height: 38px;
+    height: 36px;
+    margin: 0 12px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   #BannerSection #BannerLeft img {
     height: 44px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #BannerSection #BannerLeft img {
-    height: 38px;
-    margin: 0 12px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #BannerSection #BannerLeft img {
-    height: 32px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #BannerSection #BannerLeft img {
-    height: 28px;
-    margin: 0 8px;
+    margin: 0 16px;
   }
 }
 
@@ -1070,12 +1052,12 @@ header #headerLeft img {
 
 @media screen and (max-width: 800px) {
   #BannerSection #BannerLeft #CTAbox #mainCTAS a {
-    width: 200px;
+    width: 220px;
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 450px) {
   #BannerSection #BannerLeft #CTAbox #mainCTAS a {
     width: 160px;
     font-size: 12px;
