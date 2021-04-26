@@ -30,7 +30,7 @@ body{
             font-size: 20px;
         }
         @media screen and (max-width: 450px){
-            font-size: 16px;
+            font-size: 17px;
         }
     }
     .primaryButton{
@@ -413,7 +413,7 @@ header{
                 font-size: 16px;
             }
             @media screen and (max-width: 600px){
-                font-size: 13px;
+                font-size: 14px;
             }
 
         }
@@ -724,7 +724,7 @@ header{
             font-size: 16px;
         }
         @media screen and (max-width: 600px){
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 }
@@ -767,6 +767,7 @@ header{
                 }
                 @media screen and (max-width: 600px){
                     font-size: 14px;
+                    text-align: left;
                 }
             }
         }
@@ -830,6 +831,7 @@ header{
                 }
             }
             display: grid;
+            grid-template-columns: 50% 50%;
             grid-template-areas: "fname lname"
                                     "phone email"
                                     " submit submit";
@@ -873,8 +875,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 600px){
-            padding-left: 15%;
+        @media screen and (max-width: 500px){
+            padding-left: 5%;
         }
     }
     .links2{
@@ -884,6 +886,9 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
+        @media screen and (max-width: 500px){
+            padding-left: 5%;
+        }
     }
     .links3{
         grid-area: col3;
@@ -892,8 +897,8 @@ footer{
         @media screen and (max-width: 800px){
             padding-left: 25%;
         }
-        @media screen and (max-width: 600px){
-            padding-left: 15%;
+        @media screen and (max-width: 500px){
+            padding-left: 5%;
         }
     }
     .links4{
@@ -902,6 +907,9 @@ footer{
         flex-direction: column;
         @media screen and (max-width: 800px){
             padding-left: 25%;
+        }
+        @media screen and (max-width: 500px){
+            padding-left: 5%;
         }
     }
     .tribute{
