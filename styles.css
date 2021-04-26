@@ -985,7 +985,7 @@ header #headerLeft img {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #BannerSection #BannerLeft li {
     font-size: 14px;
   }
@@ -993,7 +993,7 @@ header #headerLeft img {
 
 @media screen and (max-width: 450px) {
   #BannerSection #BannerLeft li {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -1053,14 +1053,13 @@ header #headerLeft img {
 @media screen and (max-width: 800px) {
   #BannerSection #BannerLeft #CTAbox #mainCTAS a {
     width: 220px;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 450px) {
   #BannerSection #BannerLeft #CTAbox #mainCTAS a {
     width: 160px;
-    font-size: 12px;
   }
 }
 
@@ -1260,14 +1259,14 @@ header #headerLeft img {
 
 @media screen and (max-width: 1200px) {
   #Solutions .screenDemo p {
-    font-size: 22px;
+    font-size: 23px;
     margin: 0 50px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   #Solutions .screenDemo p {
-    font-size: 20px;
+    font-size: 21px;
     margin: 0 0 30px;
     width: 60%;
   }
@@ -1275,14 +1274,14 @@ header #headerLeft img {
 
 @media screen and (max-width: 800px) {
   #Solutions .screenDemo p {
-    font-size: 18px;
+    font-size: 19px;
     width: 70%;
   }
 }
 
 @media screen and (max-width: 800px) {
   #Solutions .screenDemo p {
-    font-size: 16px;
+    font-size: 17px;
     width: 70%;
   }
 }
