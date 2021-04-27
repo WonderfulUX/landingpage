@@ -1306,6 +1306,12 @@ header #headerLeft img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #Solutions .screenDemo:last-child {
+    margin-bottom: 50px;
+  }
+}
+
 #Solutions .screenDemo img {
   width: 55%;
   border-radius: 13px;

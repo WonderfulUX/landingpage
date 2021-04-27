@@ -441,7 +441,6 @@ header{
             grid-template-columns: 60px auto;
             align-items: center;
             margin-bottom: 80px;
-
         }
     }
     .screenDemo{   
@@ -451,7 +450,12 @@ header{
         @media screen and (max-width: 1000px){
             flex-direction: column-reverse;
             align-items: flex-start;
-        }  
+        }
+        @media screen and (max-width: 600px){
+            &:last-child{
+                margin-bottom: 50px;
+            }
+        }
         img{
             width: 55%;
             border-radius: 13px;
