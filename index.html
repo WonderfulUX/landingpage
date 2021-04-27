@@ -233,17 +233,38 @@
     </footer><!--FOOTER END-->
     <script>
         function displayMenu(){
-            let menuPos = document.getElementById("MenuMobile");
-            if (menuPos.style.right=="0px")
+            let bg = document.getElementById("MenuMobile");
+            let menu = document.getElementById("MenuMobileBlock");
+            let menubar = document.getElementById("BoutonMenuMobile").getElementsByTagName("div");
+
+            if (bg.style.width==="100vw")
             {
-                document.getElementById("MenuMobile").style.width= "0";
+                bg.style.width="0";
+                menu.style.right= "-250px";
+                menubar[1].style.display= "block";
+                menubar[0].style.transform= "rotate(0)";
+                menubar[2].style.transform= "rotate(0)";
+                console.log('if')  
             }
             else{
-                document.getElementById("MenuMobile").style.right="100vw";
+                bg.style.width= "100vw";
+                menu.style.right= "0px";
+                menubar[1].style.display= "none";
+                menubar[0].style.transform= "rotate(135deg) translateY(-1px)";
+                menubar[2].style.transform= "rotate(-135deg) translateY(1px)";
+                console.log('else')
             }
         }
         function hideMenu(){
-             document.getElementById("MenuMobile").style.right= "-240px";
+            let bg = document.getElementById("MenuMobile");
+            let menu = document.getElementById("MenuMobileBlock");
+            let menubar = document.getElementById("BoutonMenuMobile").getElementsByTagName("div");
+
+            document.getElementById("MenuMobile").style.width="0";
+            document.getElementById("MenuMobileBlock").style.right= "-250px";
+            menubar[1].style.display= "block";
+            menubar[0].style.transform= "rotate(0)";
+            menubar[2].style.transform= "rotate(0)";
         }
     </script>
 </body>

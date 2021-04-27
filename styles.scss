@@ -104,14 +104,19 @@ header{
             z-index: 60;
             @media screen and (max-width: 1000px){
                 display: block;
-                padding-right: 20px;
             }
             .MenuButtonBar{
                 position: relative;
                 height: 2px;
                 width: 20px;
                 background-color: $primary;
-
+                transition: all 0.3s;
+                *{
+                    position: absolute;
+                }
+                &:nth-child(2){
+                    margin: 4px 0;
+                }
             }
         }       
     }
@@ -147,24 +152,36 @@ header{
 }
 #MenuMobile{
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     top: 0;
-    left: 0;
+    right: 0;
     width: 0;
-    height: 0;
-    background-color: white;
+    height: 100vh;
+    background-color: rgba($color: black, $alpha: 0.8);
     font-size: 14px;
-    transition: all 0.3s;
+    #MenuMobileBlock{
+        position: absolute;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 500px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: white;
+        transition: all 0.3s;
+        
+    }
     li{
-        height:80px;
+        height: 50px;
         text-align: center;
+        margin: 10px 0;
         a{
             display: block;
             height: 45px;
             line-height: 45px;
+            margin: 0;
         }
     }
 }

@@ -701,7 +701,6 @@ header #headerRight #BoutonMenuMobile {
 @media screen and (max-width: 1000px) {
   header #headerRight #BoutonMenuMobile {
     display: block;
-    padding-right: 20px;
   }
 }
 
@@ -710,6 +709,16 @@ header #headerRight #BoutonMenuMobile .MenuButtonBar {
   height: 2px;
   width: 20px;
   background-color: #26205C;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header #headerRight #BoutonMenuMobile .MenuButtonBar * {
+  position: absolute;
+}
+
+header #headerRight #BoutonMenuMobile .MenuButtonBar:nth-child(2) {
+  margin: 4px 0;
 }
 
 header #headerLeft {
@@ -766,6 +775,21 @@ header #headerLeft img {
 
 #MenuMobile {
   position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+#MenuMobile #MenuMobileBlock {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 500px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,31 +797,28 @@ header #headerLeft img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
   background-color: white;
-  font-size: 14px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 #MenuMobile li {
-  height: 80px;
+  height: 50px;
   text-align: center;
+  margin: 10px 0;
 }
 
 #MenuMobile li a {
   display: block;
   height: 45px;
   line-height: 45px;
+  margin: 0;
 }
 
 #BannerSection {
