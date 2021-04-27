@@ -787,9 +787,7 @@ header #headerLeft img {
   position: absolute;
   top: 0;
   right: -250px;
-  width: 250px;
-  height: 500px;
-  padding-bottom: 20px;
+  padding: 50px 30px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
