@@ -695,20 +695,21 @@ header #headerRight #BoutonMenuMobile {
   background: none;
   display: none;
   cursor: pointer;
+  z-index: 60;
 }
 
 @media screen and (max-width: 1000px) {
   header #headerRight #BoutonMenuMobile {
     display: block;
-    padding-right: 30px;
+    padding-right: 20px;
   }
 }
 
-header #headerRight #BoutonMenuMobile img {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+header #headerRight #BoutonMenuMobile .MenuButtonBar {
+  position: relative;
+  height: 2px;
+  width: 20px;
+  background-color: #26205C;
 }
 
 header #headerLeft {
@@ -765,21 +766,32 @@ header #headerLeft img {
 
 #MenuMobile {
   position: fixed;
-  top: 50px;
-  right: -240px;
-  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
   background-color: white;
-  padding: 10px 25px;
-  -webkit-box-shadow: 0 2px 10px rgba(131, 131, 131, 0.4);
-          box-shadow: 0 2px 10px rgba(131, 131, 131, 0.4);
   font-size: 14px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 #MenuMobile li {
-  height: 60px;
-  text-align: left;
+  height: 80px;
+  text-align: center;
 }
 
 #MenuMobile li a {
@@ -903,46 +915,46 @@ header #headerLeft img {
   }
 }
 
-#BannerSection #BannerLeft .h1Text #LogoKomesBanner {
-  height: 70px;
+#BannerSection #BannerLeft #LogoKomesBanner {
+  height: 44px;
   margin: 0 16px;
 }
 
 @media screen and (max-width: 1300px) {
-  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+  #BannerSection #BannerLeft #LogoKomesBanner {
     height: 40px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+  #BannerSection #BannerLeft #LogoKomesBanner {
     height: 36px;
     margin: 0 12px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+  #BannerSection #BannerLeft #LogoKomesBanner {
     height: 40px;
     margin: 0 16px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+  #BannerSection #BannerLeft #LogoKomesBanner {
     height: 32px;
     margin: 0 9px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+  #BannerSection #BannerLeft #LogoKomesBanner {
     height: 30px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  #BannerSection #BannerLeft .h1Text #LogoKomesBanner {
+  #BannerSection #BannerLeft #LogoKomesBanner {
     height: 28px;
     margin: 0 9px;
   }
@@ -955,7 +967,13 @@ header #headerLeft img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 600px) {
+  #BannerSection #BannerLeft .textList {
+    margin-bottom: 5px;
+  }
 }
 
 #BannerSection #BannerLeft .textList img {

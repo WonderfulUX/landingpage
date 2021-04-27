@@ -21,19 +21,21 @@
             <a href="" class="primaryButton">Créer un compte</a>
             <a href="" class="tertiaryButton">Se connecter</a>
             <button id="BoutonMenuMobile" onclick="displayMenu()">
-                <img src="./icons/menu.svg" alt="Menu Landing page Komès" >
+                <div class="MenuButtonBar"></div>
+                <div class="MenuButtonBar"></div>
+                <div class="MenuButtonBar"></div>
             </button>
+            <nav id="MenuMobile"><!--MOBILE MENU-->
+                <ul id="MenuMobileBlock">
+                    <li><a href="#Solutions" onclick="hideMenu()">Comment ça marche</a></li>
+                    <li><a href="#Partenaires" onclick="hideMenu()">Nos partenaires</a></li>
+                    <li><a href="#Contact" onclick="hideMenu()">Contact</a></li>
+                    <li><a href="" class="secondaryButton">Se connecter</a></li>
+                    <li><a href="" class="primaryButton" >Créer un compte</a></li>
+                </ul>
+            </nav><!--MOBILE MENU END-->
         </div>
     </header><!--HEADER END-->
-    <nav id="MenuMobile"><!--MOBILE MENU-->
-        <ul>
-            <li><a href="#Solutions" onclick="hideMenu()">Comment ça marche</a></li>
-            <li><a href="#Partenaires" onclick="hideMenu()">Nos partenaires</a></li>
-            <li><a href="#Contact" onclick="hideMenu()">Contact</a></li>
-            <li><a href="" class="secondaryButton">Se connecter</a></li>
-            <li><a href="" class="primaryButton" >Créer un compte</a></li>
-        </ul>
-    </nav><!--MOBILE MENU END-->
     <section id="BannerSection"><!--BANNER SECTION-->
         <div class="container">
             <div id="BannerLeft">
@@ -234,24 +236,14 @@
             let menuPos = document.getElementById("MenuMobile");
             if (menuPos.style.right=="0px")
             {
-                document.getElementById("MenuMobile").style.right= "-240px";
+                document.getElementById("MenuMobile").style.width= "0";
             }
             else{
-                document.getElementById("MenuMobile").style.right="0px";
+                document.getElementById("MenuMobile").style.right="100vw";
             }
         }
         function hideMenu(){
              document.getElementById("MenuMobile").style.right= "-240px";
-        }
-        function changeIcons(){
-            let vw=window.innerWidth;
-            if(vw<600)
-            {
-                alert('sous les 600')
-            }
-            else{
-                alert('Plus de  600')
-            }
         }
     </script>
 </body>

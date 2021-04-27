@@ -101,14 +101,17 @@ header{
             background: none;
             display: none;
             cursor: pointer;
+            z-index: 60;
             @media screen and (max-width: 1000px){
                 display: block;
-                padding-right: 30px;
+                padding-right: 20px;
             }
-            img{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
+            .MenuButtonBar{
+                position: relative;
+                height: 2px;
+                width: 20px;
+                background-color: $primary;
+
             }
         }       
     }
@@ -144,17 +147,20 @@ header{
 }
 #MenuMobile{
     position: fixed;
-    top: 50px;
-    right: -240px;
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
     background-color: white;
-    padding: 10px 25px;
-    box-shadow: 0 2px 10px rgba($color: $grey, $alpha: 0.4);
     font-size: 14px;
     transition: all 0.3s;
     li{
-        height: 60px;
-        text-align: left;
+        height:80px;
+        text-align: center;
         a{
             display: block;
             height: 45px;
@@ -221,37 +227,40 @@ header{
             @media screen and (max-width: 450px){
                 font-size: 28px;
             }
-            #LogoKomesBanner{
-                height: 70px;
-                margin: 0 16px;
-                @media screen and (max-width: 1300px){
-                    height: 40px;
-                }
-                @media screen and (max-width: 1100px){
-                    height: 36px;
-                    margin: 0 12px
-                }
-                @media screen and (max-width: 1000px){
-                    height: 40px;
-                    margin: 0 16px
-                }
-                @media screen and (max-width: 800px){
-                    height: 32px;
-                    margin: 0 9px;
-                }
-                @media screen and (max-width: 600px){
-                    height: 30px;
-                }
-                @media screen and (max-width: 450px){
-                    height: 28px;
-                    margin: 0 9px;
-                }
+        }
+        #LogoKomesBanner{
+            height: 44px;
+            margin: 0 16px;
+            @media screen and (max-width: 1300px){
+                height: 40px;
+            }
+            @media screen and (max-width: 1100px){
+                height: 36px;
+                margin: 0 12px
+            }
+            @media screen and (max-width: 1000px){
+                height: 40px;
+                margin: 0 16px
+            }
+            @media screen and (max-width: 800px){
+                height: 32px;
+                margin: 0 9px;
+            }
+            @media screen and (max-width: 600px){
+                height: 30px;
+            }
+            @media screen and (max-width: 450px){
+                height: 28px;
+                margin: 0 9px;
             }
         }
         .textList{
             display: flex;
             align-items: center;
-            margin-bottom: 5px;
+            margin-bottom: 7px;
+            @media screen and (max-width: 600px){
+                margin-bottom: 5px;
+            }
             img{
                 height: 30px;
                 margin-right: 8px;
